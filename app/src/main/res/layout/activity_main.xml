@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:layout_gravity="center">
+    <!-- premier ligne -->
+
+    <!--bouton 1-->
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="@dimen/size_button"
+        android:layout_height="@dimen/size_button"
+        android:background="@color/teal_200"
+        />
+
+    <!--ligne 1-->
+    <View
+        android:id="@+id/line1"
+        android:layout_width="@dimen/width_line"
+        android:layout_height="0dp"
+        android:layout_toRightOf="@+id/bt1"
+        android:layout_alignTop="@id/bt1"
+        android:layout_alignBottom="@id/bt7"
+        android:layout_toEndOf="@+id/bt1"
+        android:background="@color/black">
+    </View>
+
+    <!--bouton 2-->
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="@dimen/size_button"
+        android:layout_height="@dimen/size_button"
+        android:layout_toRightOf="@id/line1"
+        android:layout_toEndOf="@id/line1"
+        android:background="@color/teal_200"
+        />
+
+
+    <!--ligne 2-->
+    <View
+        android:id="@+id/line2"
+        android:layout_width="@dimen/width_line"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        android:layout_toRightOf="@+id/bt2"
+        android:layout_alignTop="@id/bt1"
+        android:layout_alignBottom="@id/bt7"
+        android:layout_toEndOf="@+id/bt2">
+
+    </View>
+
+    <!--bouton 3-->
+    <Button
+        android:id="@+id/bt3"
+        android:layout_width="@dimen/size_button"
+        android:layout_height="@dimen/size_button"
+        android:layout_toRightOf="@id/line2"
+        android:layout_toEndOf="@id/line2"
+        android:background="@color/teal_200"/>
+    <!--deuxieme bloc-->
+
+    <!--bouton 4-->
+    <Button
+        android:id="@+id/bt4"
+        android:layout_width="@dimen/size_button"
+        android:layout_height="@dimen/size_button"
+        android:layout_below="@id/line3"
+        android:background="@color/teal_200"
+        />
+
+    <!--ligne 3-->
+    <View
+        android:id="@+id/line3"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/width_line"
+        android:layout_below="@id/bt1"
+        android:layout_alignLeft="@id/bt1"
+        android:layout_alignRight="@id/bt6"
+        android:layout_alignStart="@id/bt1"
+        android:layout_alignEnd="@id/bt6"
+        android:background="@color/black">
+
+    </View>
+
+    <!--bouton 5-->
+    <Button
+        android:id="@+id/bt5"
+        android:layout_width="@dimen/size_button"
+        android:layout_height="@dimen/size_button"
+        android:layout_toRightOf="@id/line1"
+        android:layout_below="@id/line3"
+        android:layout_toEndOf="@id/line1"
+        android:background="@color/teal_200"/>
+
+    <!--bouton 6-->
+    <Button
+        android:id="@+id/bt6"
+        android:layout_width="@dimen/size_button"
+        android:layout_height="@dimen/size_button"
+        android:layout_toRightOf="@id/line2"
+        android:layout_below="@id/line3"
+        android:layout_toEndOf="@id/line2"
+        android:background="@color/teal_200"/>
+
+    <!--ligne 4-->
+    <View
+        android:id="@+id/line4"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/width_line"
+        android:layout_below="@id/bt4"
+        android:layout_alignLeft="@id/bt1"
+        android:layout_alignRight="@id/bt6"
+        android:layout_alignStart="@id/bt1"
+        android:layout_alignEnd="@id/bt6"
+        android:background="@color/black">
+
+    </View>
+
+
+    <!--bouton 7-->
+    <Button
+        android:id="@+id/bt7"
+        android:layout_width="@dimen/size_button"
+        android:layout_height="@dimen/size_button"
+        android:layout_below="@id/line4"
+        android:background="@color/teal_200"
+        />
+
+    <!--bouton 8-->
+    <Button
+        android:id="@+id/bt8"
+        android:layout_width="@dimen/size_button"
+        android:layout_height="@dimen/size_button"
+        android:layout_below="@id/line4"
+        android:layout_toRightOf="@id/line1"
+        android:layout_toEndOf="@id/line1"
+        android:background="@color/teal_200"/>
+
+    <!--bouton 9-->
+    <Button
+        android:id="@+id/bt9"
+        android:layout_width="@dimen/size_button"
+        android:layout_height="@dimen/size_button"
+        android:layout_below="@id/line4"
+        android:layout_toRightOf="@id/line2"
+        android:layout_toEndOf="@id/line2"
+        android:background="@color/teal_200"/>
+
+    <TextView
+        android:id="@+id/auTourDe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt7"
+        android:layout_marginTop="20dp"
+        android:text="@string/au_tour_du_joueur"/>
+
+    <TextView
+        android:id="@+id/joueur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt7"
+        android:layout_marginTop="20dp"
+        android:text="@string/x"
+        android:layout_toRightOf="@+id/auTourDe"
+        android:layout_toEndOf="@+id/auTourDe" />
+
+
+</RelativeLayout>

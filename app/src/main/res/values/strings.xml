@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name" translatable="false">morpions</string>
+    <string name="au_tour_du_joueur">Au tour du joueur :</string>
+    <string name="x">X</string>
+</resources>
